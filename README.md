@@ -6,38 +6,58 @@ Download videos and audio from YouTube with a clean, simple interface — no ads
 
 ---
 
-## Download
+## Download & Install
 
-Get the latest version for your platform from the [Releases](../../releases) page:
+### macOS (Apple Silicon — M1, M2, M3, M4)
 
-| Platform | File |
-|----------|------|
-| macOS (Apple Silicon) | `YTDrop-arm64.dmg` |
-| macOS (Intel) | `YTDrop-x64.dmg` |
-| Windows | `YTDrop-win.zip` |
-| Linux | `YTDrop.AppImage` |
+1. Download **[YTDrop-1.0.0-arm64.dmg](../../releases/latest)** from the Releases page
+2. Open the downloaded `.dmg` file
+3. Drag the **YTDrop** icon into your **Applications** folder
+4. Open YTDrop from Launchpad or Spotlight
+
+> **"App can't be opened" warning?**
+> Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
 
 ---
 
-## Installation
+### macOS (Intel)
 
-### macOS
-1. Download `YTDrop-arm64.dmg` (Apple Silicon) or `YTDrop-x64.dmg` (Intel)
-2. Open the `.dmg` file
-3. Drag **YTDrop** into your Applications folder
+1. Download **[YTDrop-1.0.0.dmg](../../releases/latest)** from the Releases page
+2. Open the downloaded `.dmg` file
+3. Drag the **YTDrop** icon into your **Applications** folder
 4. Open YTDrop from Launchpad or Spotlight
 
-> If macOS says the app can't be opened, go to **System Settings → Privacy & Security** and click **Open Anyway**.
+> Not sure which Mac you have? Click the  Apple menu → **About This Mac**. If it says **Apple M1/M2/M3/M4**, use the Apple Silicon version above.
+
+> **"App can't be opened" warning?**
+> Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
+
+---
 
 ### Windows
-1. Download `YTDrop-win.zip`
-2. Extract the zip file
-3. Run `YTDrop.exe`
+
+1. Download **[YTDrop-1.0.0-win.zip](../../releases/latest)** from the Releases page
+2. Right-click the `.zip` file and select **Extract All**
+3. Open the extracted folder and double-click **YTDrop.exe**
+
+> No installation needed — YTDrop runs directly from the folder. You can move it anywhere you like.
+
+> **Windows SmartScreen warning?**
+> Click **More info** → **Run anyway**. This appears because the app isn't code-signed yet.
+
+---
 
 ### Linux
-1. Download `YTDrop.AppImage`
-2. Make it executable: `chmod +x YTDrop.AppImage`
-3. Run it: `./YTDrop.AppImage`
+
+1. Download **[YTDrop.AppImage](../../releases/latest)** from the Releases page
+2. Open a terminal and make it executable:
+   ```bash
+   chmod +x YTDrop.AppImage
+   ```
+3. Run it:
+   ```bash
+   ./YTDrop.AppImage
+   ```
 
 ---
 
