@@ -1,0 +1,52 @@
+{
+  "name": "ytdrop",
+  "version": "1.0.0",
+  "description": "A beautiful YouTube downloader",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.ytdrop.app",
+    "productName": "YTDrop",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "assets/icon.icns",
+      "target": [
+        { "target": "dmg", "arch": ["arm64", "x64"] }
+      ],
+      "extraResources": [
+        { "from": "bin/yt-dlp", "to": "bin/yt-dlp" }
+      ]
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        { "target": "zip", "arch": ["x64"] }
+      ],
+      "extraResources": [
+        { "from": "bin/yt-dlp.exe", "to": "bin/yt-dlp.exe" }
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "target": "AppImage",
+      "extraResources": [
+        { "from": "bin/yt-dlp", "to": "bin/yt-dlp" }
+      ]
+    }
+  },
+  "keywords": ["youtube", "downloader", "yt-dlp"],
+  "author": "YTDrop",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
