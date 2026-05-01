@@ -1,159 +1,89 @@
 # YTDrop
 
-**A simple YouTube video and audio downloader for macOS, Windows, and Linux.** 🎬
-
-YTDrop gives you a clean desktop app for saving YouTube videos or extracting audio, without ads, sign-ins, or confusing menus.
+A simple, clean desktop app to download YouTube videos and audio. No ads, no sign-in, no clutter.
 
 ---
 
-## What You Can Do ✨
+## Download
 
-- Download YouTube videos as MP4
-- Save audio as MP3, M4A, or WAV
-- Pick video quality: Best Quality, 1080p, 720p, 480p, or 360p
-- Choose where files are saved
-- See live download progress
-- Open your download folder when finished
-- Use a dark, minimal interface
+Go to the **[Releases](../../releases/latest)** page and download the file for your computer.
 
 ---
 
-## Download & Install 📦
+## Install
 
-Go to the **[latest release](../../releases/latest)** and download the file for your computer.
+### macOS — Apple Silicon (M1, M2, M3, M4)
 
-### macOS Apple Silicon
+1. Download `YTDrop-1.0.0-arm64.dmg`
+2. Open the file and drag **YTDrop** to your Applications folder
+3. Open YTDrop from Launchpad or Spotlight
 
-Use this if your Mac has an Apple M1, M2, M3, or M4 chip.
+Not sure which chip you have? Click the Apple menu and choose **About This Mac**.
 
-1. Download **YTDrop-1.0.0-arm64.dmg**
-2. Open the `.dmg` file
-3. Drag **YTDrop** into your **Applications** folder
-4. Open YTDrop from Launchpad, Spotlight, or Applications
+If macOS blocks the app from opening, go to **System Settings → Privacy & Security** and click **Open Anyway**.
 
-If macOS says the app cannot be opened, go to **System Settings -> Privacy & Security** and click **Open Anyway**.
+---
 
-### macOS Intel
+### macOS — Intel
 
-Use this if your Mac has an Intel processor.
+1. Download `YTDrop-1.0.0.dmg`
+2. Open the file and drag **YTDrop** to your Applications folder
+3. Open YTDrop from Launchpad or Spotlight
 
-1. Download **YTDrop-1.0.0.dmg**
-2. Open the `.dmg` file
-3. Drag **YTDrop** into your **Applications** folder
-4. Open YTDrop from Launchpad, Spotlight, or Applications
+If macOS blocks the app from opening, go to **System Settings → Privacy & Security** and click **Open Anyway**.
 
-Not sure which Mac you have? Click the Apple menu and choose **About This Mac**.
-
-If macOS says the app cannot be opened, go to **System Settings -> Privacy & Security** and click **Open Anyway**.
+---
 
 ### Windows
 
-1. Download **YTDrop-1.0.0-win.zip**
-2. Right-click the `.zip` file and choose **Extract All**
-3. Open the extracted folder
-4. Double-click **YTDrop.exe**
+1. Download `YTDrop-1.0.0-win.zip`
+2. Right-click the file and choose **Extract All**
+3. Open the extracted folder and double-click `YTDrop.exe`
 
-No installer is needed. You can keep the folder anywhere you like.
+No installer needed. You can move the folder anywhere you like.
 
-If Windows SmartScreen appears, click **More info** and then **Run anyway**. This can happen because the app is not code-signed yet.
+If Windows SmartScreen shows a warning, click **More info** then **Run anyway**.
+
+---
 
 ### Linux
 
-1. Download **YTDrop.AppImage**
-2. Make it executable:
-
-   ```bash
-   chmod +x YTDrop.AppImage
-   ```
-
-3. Run it:
-
-   ```bash
-   ./YTDrop.AppImage
-   ```
+1. Download `YTDrop.AppImage`
+2. Right-click the file → **Properties** → check **Allow executing as program** (or run `chmod +x YTDrop.AppImage` in a terminal)
+3. Double-click to launch
 
 ---
 
-## How To Use YTDrop 🚀
+## How to Use
 
 1. Copy a YouTube video link
 2. Paste it into YTDrop
-3. Choose your format, such as **1080p MP4** or **MP3 Audio**
-4. Choose where you want to save the file
+3. Choose your format — video quality or audio type
+4. Choose a folder to save the file
 5. Click **Download**
-6. Wait for the progress bar to finish
 
-That is it. Your file will be saved in the folder you selected.
-
----
-
-## Format Guide 🎧
-
-| Choose this | Best for |
-| --- | --- |
-| Best Quality | Highest available MP4 video quality |
-| 1080p MP4 | Full HD video |
-| 720p MP4 | Smaller HD video files |
-| 480p MP4 | Standard quality video |
-| 360p MP4 | Small video files |
-| MP3 Audio | Music, podcasts, and general audio |
-| M4A Audio | Good quality audio with smaller files |
-| WAV Audio | Uncompressed audio |
+Your file will be ready in the folder you selected.
 
 ---
 
-## System Requirements 💻
+## Formats
 
-| System | Minimum |
-| --- | --- |
-| macOS | macOS 10.13 High Sierra or later |
-| Windows | Windows 10 or later, 64-bit |
-| Linux | A modern 64-bit Linux distribution |
-
----
-
-## Common Questions ❓
-
-**Do I need a YouTube account?**  
-No. YTDrop does not require sign-in.
-
-**Where do downloads go?**  
-By default, YTDrop starts with your Downloads folder. You can choose a different folder before downloading.
-
-**Why did my download fail?**  
-Check that the link is valid, the video is available in your region, and your internet connection is working.
-
-**Can I download playlists?**  
-YTDrop is designed for one video at a time.
+| Format | Best for |
+|--------|----------|
+| Best Quality | Highest available video quality |
+| 1080p / 720p / 480p / 360p | Specific video quality |
+| MP3 | Music and podcasts |
+| M4A | Smaller audio files |
+| WAV | Uncompressed audio |
 
 ---
 
-## For Developers 🛠️
+## Legal
 
-YTDrop is an Electron app powered by `yt-dlp`.
-
-```bash
-npm install
-npm start
-```
-
-Build commands:
-
-```bash
-npm run build:mac
-npm run build:win
-npm run build:linux
-npm run build:all
-```
+YTDrop is for personal use only. Only download content you have the right to download. Downloading copyrighted material without permission may violate YouTube's Terms of Service and local laws.
 
 ---
 
-## Legal Note ⚖️
-
-YTDrop is intended for personal use only. Only download content you own, content you have permission to download, or content that is legally available for downloading. Downloading copyrighted content without permission may violate YouTube's Terms of Service and applicable laws.
-
----
-
-## License 📄
+## License
 
 MIT
