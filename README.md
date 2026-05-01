@@ -1,102 +1,84 @@
-# YTDrop 🎬
+# YTDrop
 
-A beautiful, minimal YouTube downloader built with Electron + yt-dlp.
+**A beautiful, minimal YouTube downloader for macOS, Windows, and Linux.**
 
-![YTDrop](screenshot.png)
+Download videos and audio from YouTube with a clean, simple interface — no ads, no clutter, no sign-in required.
+
+---
+
+## Download
+
+Get the latest version for your platform from the [Releases](../../releases) page:
+
+| Platform | File |
+|----------|------|
+| macOS (Apple Silicon) | `YTDrop-arm64.dmg` |
+| macOS (Intel) | `YTDrop-x64.dmg` |
+| Windows | `YTDrop-win.zip` |
+| Linux | `YTDrop.AppImage` |
+
+---
+
+## Installation
+
+### macOS
+1. Download `YTDrop-arm64.dmg` (Apple Silicon) or `YTDrop-x64.dmg` (Intel)
+2. Open the `.dmg` file
+3. Drag **YTDrop** into your Applications folder
+4. Open YTDrop from Launchpad or Spotlight
+
+> If macOS says the app can't be opened, go to **System Settings → Privacy & Security** and click **Open Anyway**.
+
+### Windows
+1. Download `YTDrop-win.zip`
+2. Extract the zip file
+3. Run `YTDrop.exe`
+
+### Linux
+1. Download `YTDrop.AppImage`
+2. Make it executable: `chmod +x YTDrop.AppImage`
+3. Run it: `./YTDrop.AppImage`
+
+---
+
+## How to Use
+
+1. **Paste a YouTube URL** into the input field
+2. **Choose a format** — video quality (1080p, 720p, 480p, 360p) or audio (MP3, M4A, WAV)
+3. **Select your output folder** where the file will be saved
+4. Click **Download** and watch the real-time progress
+
+That's it.
+
+---
 
 ## Features
 
-- Download YouTube videos in 1080p, 720p, 480p, 360p
-- Download audio as MP3, M4A, or WAV
-- Choose your output folder
-- Real-time download progress
-- Dark, minimal UI with custom title bar
-- Cross-platform: macOS, Windows, Linux
+- Download videos in 1080p, 720p, 480p, or 360p
+- Extract audio as MP3, M4A, or WAV
+- Choose any output folder on your system
+- Real-time download progress bar
+- Dark, minimal interface
+- No account required
 
 ---
 
-## Prerequisites
+## System Requirements
 
-You need **yt-dlp** installed on the system running the app.
-
-```bash
-# macOS
-brew install yt-dlp
-
-# Windows (winget)
-winget install yt-dlp
-
-# Linux
-sudo pip install yt-dlp --break-system-packages
-```
-
----
-
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Run in development
-npm start
-```
-
----
-
-## Build & Publish
-
-```bash
-# Install dependencies
-npm install
-
-# Build for your current platform
-npm run build
-
-# Build for specific platforms
-npm run build:mac    # → dist/YTDrop.dmg
-npm run build:win    # → dist/YTDrop Setup.exe
-npm run build:linux  # → dist/YTDrop.AppImage
-```
-
-Output files go to the `dist/` folder.
-
----
-
-## Bundling yt-dlp (optional, for standalone distribution)
-
-To ship the app without requiring users to install yt-dlp separately:
-
-1. Download the yt-dlp binary for your target platform from https://github.com/yt-dlp/yt-dlp/releases
-2. Place it in a `bin/` folder at the root:
-   ```
-   bin/
-     yt-dlp          ← macOS/Linux
-     yt-dlp.exe      ← Windows
-   ```
-3. The `extraResources` config in `package.json` will include it in the built app automatically.
-
----
-
-## Publishing to GitHub Releases
-
-1. Push your code to a GitHub repo
-2. Create a release tag:
-   ```bash
-   git tag v1.0.0 && git push --tags
-   ```
-3. Run the build and upload the `dist/` files to the GitHub release
-4. Users download the installer for their platform
-
----
-
-## Publishing to itch.io or direct
-
-Upload the built installers from `dist/` directly.
+| | Minimum |
+|--|---------|
+| macOS | 10.13 (High Sierra) or later |
+| Windows | Windows 10 or later (64-bit) |
+| Linux | Any modern 64-bit distribution |
 
 ---
 
 ## Legal
 
-This app is for personal use. Only download content you have the right to download.
-Redistribution of copyrighted content is not permitted.
+YTDrop is intended for personal use only. Only download content you own or have permission to download. Downloading copyrighted content without authorization may violate YouTube's Terms of Service and applicable laws.
+
+---
+
+## License
+
+MIT
